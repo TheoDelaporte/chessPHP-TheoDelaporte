@@ -22,7 +22,7 @@ class Pieces
 
     public function show($position, $possiblePositions)
     {
-        $this->grille = new Grille();
+        $this->grille = new ChessBoard();
         $alpha = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
         echo "  A  B  C  D  E  F  G  H" . PHP_EOL;
         $position = str_split($position);
