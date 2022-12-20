@@ -1,5 +1,5 @@
 <?php
-require_once 'Pieces.php';
+
 
 class Knight extends Pieces
 {

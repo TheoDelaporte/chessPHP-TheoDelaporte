@@ -1,8 +1,14 @@
 <?php
-$className = 'Bishop';
+$className = 'rook';
 
-require_once $className . '.php';
-require_once 'ChessBoard.php';
+spl_autoload_register(function($autoloader){
+
+    $autoloader = str_replace("App", "classes", $autoloader);
+    $autoloader = str_replace("\\", "/", $autoloader);
+    $autoloader .= '.php';
+
+    require_once $autoloader;
+});
 
 $piece = new $className('D5');
 $position = $piece->position;

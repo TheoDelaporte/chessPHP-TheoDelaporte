@@ -1,5 +1,4 @@
 <?php
-require_once 'Pieces.php';
 
 class Pion extends Pieces
 {
